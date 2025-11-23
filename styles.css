@@ -175,31 +175,31 @@ body {
   }
 }
 
-/* Contact Section */
-.contact-link {
+/* Certifications section styles */
+.cert-link {
   text-decoration: none;
-  color: var(--primary-color);
-  transition: var(--transition);
+  color: inherit;
   display: block;
-  padding: 2rem;
-  border-radius: 20px;
-  background: white;
 }
 
-.contact-link:hover {
-  color: var(--primary-color);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.cert-card {
   transition: var(--transition);
-  color: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.contact-link:hover .contact-icon {
-  transform: scale(1.1);
-  color: var(--primary-color);
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(16, 24, 40, 0.08);
+}
+
+.cert-badge {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 430px) {
+  .cert-badge {
+    width: 100px;
+  }
 }
